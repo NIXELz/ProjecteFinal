@@ -1,0 +1,220 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin:0;
+  background-color: #ffffff;
+  color: #04b49d;
+  font-family: Arial, sans-serif;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+header {
+  height: 100px;
+  width: 100vw;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #04b49d;
+  color: #ffffff;
+  position: relative;
+  grid-row: 1;
+}
+#titolCentral{
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 10px;
+  font-size: xx-large;
+  text-decoration: underline;
+}
+
+header img {
+  padding: 5px;
+  height: 80px;
+  margin-right: 10px;
+}
+
+/* BARRA DE NAVEGACIÓ EXTRA + HOVER */
+nav {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  max-width: 900px;
+  margin-top: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10;
+  display: flex;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: rgba(0, 0, 0, 0.3 )
+}
+.menuHoritzontal{
+  list-style: none;
+  overflow: visible;
+  display: flex;
+  justify-content: space-around;
+}
+.menuHoritzontal>li>a{
+  display: block;
+  padding: 15px 10px;
+  text-decoration: none;
+}
+.menuHoritzontal>li:hover{
+  background-color: #069683;
+}
+.menuVertical{
+  z-index: 1;
+  position: absolute;
+  display: none;
+  list-style: none;
+  width: 200px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.menuHoritzontal li:hover > .menuVertical{
+  display: block;
+}
+.menuVertical:hover{
+  background-color: rgba(0, 0, 0, 0.5 );
+}
+.menuVertical li a{
+  display: block;
+  padding: 15px 15px 15px 20px;
+}
+
+/* GRID DEL PI1 I CONTENIDOR BARRA DRETA PER SOLUCIONAR PROBLEMES DE POSICIONAMENT */
+
+.contenidorGran {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-column-gap: 20px;
+  position: relative;
+}
+
+#titolParagraf {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+}
+
+#pi1{
+  display: grid;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#pi2{
+  display: grid;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#pi3{
+  display: grid;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#pi4{
+  display: grid;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+p {
+  display: grid;
+  padding-left: 10px;
+  text-align: justify;
+}
+
+ul{
+  padding-left: 10px;
+}
+
+img{
+  width: auto;;
+}
+
+#foto-dreta {
+  grid-column: 1;
+  max-width: 400px;
+  max-height: 400px;
+  display: flex;;
+  place-self: center;
+}
+
+.contenidorParagrafImatge{
+  display: none;
+  width:100%;
+}
+
+#contenidorBarraDreta {
+  overflow: hidden;;
+  grid-column: 2;
+  background-color: #038c7a;
+}
+
+
+#contenidorBarraDreta h1{
+  padding: 20px;
+  color: white;
+  border: #ffffff;
+  border-top: 3px;
+  border-bottom: 3px;
+}
+#contenidorBarraDreta nav ul{
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px 20px 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  
+}
+
+.download-btn{
+  display: flex;
+  place-self: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #04b49d;
+  color: white;
+}
+.download-btn:hover{
+  background-color: #038c7a;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+footer{
+  height: 50px;
+  width: 100vw;
+  background-color: rgb(2, 143, 124);
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  grid-row: 3 ;
+}
+
+
